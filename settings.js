@@ -13,10 +13,10 @@ const __filename = fileURLToPath(import.meta.url);
 
 //~~~~~~~~~~~~< GLOBAL SETTINGS >~~~~~~~~~~~~\\
 
-global.owner = ["6282113821188"] // ['628','628'] 2 owner atau lebih
-global.author = 'Nazedev'
-global.botname = 'Hitori Bot'
-global.packname = 'Bot WhatsApp'
+global.owner = ["94756086474"] // ['628','628'] 2 owner atau lebih
+global.author = 'Deneth'
+global.botname = 'Dead pool'
+global.packname = 'Deneth WhatsApp'
 global.timezone = 'Asia/Jakarta' // Ganti pakai command .settimezone
 global.locale = 'en' // Ganti pakai command .setlocale
 global.listprefix = ["+","!","."]
@@ -44,34 +44,34 @@ global.my = {
 }
 
 global.limit = {
-	free: 20,
+	free: 9999,
 	premium: 999,
 	vip: 900
 }
 
 global.money = {
-	free: 10000,
+	free: 1000000,
 	premium: 1000000,
 	vip: 10000000
 }
 
 global.mess = {
 	key: "Apikey limit! Silahkan Upgrade: https://naze.biz.id",
-	owner: "Khusus Owner!",
-	admin: "Khusus Admin!",
-	botAdmin: "Bot harus Admin!",
+	owner: "Deneth owner!",
+	admin: "Deneth admin!",
+	botAdmin: "Bot deneth Admin!",
 	onWa: "Nomor tersebut tidak terdaftar di WhatsApp!",
-	group: "Khusus Grup!",
-	private: "Khusus Private Chat!",
-	quoted: "Reply pesannya!",
+	group: "deneth Grup!",
+	private: "deneth Private Chat!",
+	quoted: "කරුණාකර අදාළ මැසේජ් එකට රිප්ලයි කරන්න!",
 	limit: "Limit habis!",
-	prem: "Khusus Premium!",
+	prem: "Anujaya Premium!",
 	text: "Masukkan teksnya!",
 	media: "Kirim medianya!",
 	wait: "Proses...",
-	fail: "Gagal!",
+	fail: "ක්‍රියාව අසාර්ථකයි!",
 	error: "Error!",
-	done: "Selesai!"
+	done: "Done!"
 }
 
 global.APIs = {
