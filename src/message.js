@@ -1167,8 +1167,30 @@ async function Serialize(naze, msg, store) {
 	}
 
 	return m
-}
+	
 
+
+if (command === 'getpp' || command === 'getpic' || command === 'getprofile') {
+    let jid;
+    if (m.quoted) {
+        jid = m.quoted.sender;
+    } else if (m.mentionedJid && m.mentionedJid[0]) {
+        jid = m.mentionedJid[0];
+    } else if (text) {
+        jid = text.replace(/[^0-9]/g, '') + '@s.whatsapp.net';
+    } else {
+        return m.reply('කරුණාකර කෙනෙක්ව Mention කරන්න, Reply කරන්න නැතහොත් Number එකක් දෙන්න!');
+    }
+
+    try {
+        const ppUrl = await client.profilePictureUrl(jid, 'image');
+        await client.sendMessage(m.chat, { image: { url: ppUrl }, caption: 'මෙන්න ඔයා ඉල්ලපු DP එක! 📸' }, { quoted: m });
+    } catch (e) {
+        m.reply('මෙම පරිශීලකයාට Profile Picture එකක් නැත, නැතහොත් එය සැඟවා ඇත! ❌');
+    }
+													   }
+}
+}
 export {
 	GroupUpdate,
 	GroupParticipantsUpdate,
