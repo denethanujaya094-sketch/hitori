@@ -1188,8 +1188,6 @@ if (command === 'getpp' || command === 'getpic' || command === 'getprofile') {
     } catch (e) {
         m.reply('මෙම පරිශීලකයාට Profile Picture එකක් නැත, නැතහොත් එය සැඟවා ඇත! ❌');
     }
-													   }
-}
 }
 export {
 	GroupUpdate,
