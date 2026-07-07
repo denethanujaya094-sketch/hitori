@@ -201,7 +201,7 @@ async function LoadDataBase(naze, m) {
 		if (!m.sender.endsWith('@g.us')) global.db.users[m.sender] = user;
 		
 		const defaultSetBot = {
-			lang: 'id',
+			lang: 'en',
 			limit: 0,
 			money: 0,
 			status: 0,
